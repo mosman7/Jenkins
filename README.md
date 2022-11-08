@@ -21,7 +21,7 @@
 ![](https://miro.medium.com/max/612/0*DVSYJfjOJrCTzqUB.png)
 
 #### What is a webhook
-- It is a way for an application to provide other applications with real-time information. It provides data as it is happening. This essentially means that you get the data immediately rather having to set up frequent polls to get it in real time.
+- It is a way for an application to provide other applications with real-time information. It provides data as it is happening. This essentially means that you get the data immediately rather having to set up frequent pulls to get it in real time.
 #### Jenkins
 
 
@@ -43,3 +43,13 @@
 - Jenkins has been adopted by the likes of Facebook, Netflix and Ebay because of it's incredible advantages. Jenkins is an open source automation server in which the central build and the continuous integration take place. It works on Windows, macOs, and Linux. It has a user-friendly interface, easy installation, extensible with a ton of plugin resource, and easy environment configuration.
 
 what other tools are available as automation servedr
+
+##### Steps:
+create a new ssh key pair eng130_jenkins_osman - copy - eng130_jenkins_osman.pub
+copy .pub file into github
+
+1. create new CI/CD - app folder
+2. generate new ssh-keypair - do tthis in ssh folder on localhost
+3. copy file.pub to github repo
+4. copy private key in jenkins
+5. create new job to test CI
