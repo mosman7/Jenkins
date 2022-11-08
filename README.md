@@ -100,7 +100,24 @@ npm test
 - You have now set up a jenkins job
 
 ## Job 2
-
+- Create a new branch in github called `dev`
+- Pull changes on vscode and branch into dev `git branch -M dev`
+- Create job in jenkins
+- Follow staps from job 1 but add the following
+- In `branches to build` specify the dev branch
+- Underneath that, in `Additional behavious` add new and select `Merge before build` 
+    - Name of repository is `origin`
+    - Branch to merge to is `main`
+- In `build triggers`, select `build after other projects are built` and select your prejious jenkins job to follow
+- Do not need a web hook
+- Add post-build actions
+    - Select `push only if build succeeds`
+    - Select `merge results`
+    - Add branch, `branch to push - main`, `Target - origin`
+- Save
+- Change something in the dev branch and commit
+- Jobs 1 and 2 should now launch automatically
 
 
 Set up webhook 
+
