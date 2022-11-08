@@ -17,11 +17,13 @@
 #### What is the difference between Continuous deliver - deployment
 - The main difference is that on continuous delivery, you would have to deploy the application manually whereas continuous deployment is an extension of continuous delivery and deploys the application automatically as well as testing the application too.
 
-#### What is a webhook
 
 ![](https://miro.medium.com/max/612/0*DVSYJfjOJrCTzqUB.png)
 
+#### What is a webhook
+- It is a way for an application to provide other applications with real-time information. It provides data as it is happening. This essentially means that you get the data immediately rather having to set up frequent polls to get it in real time.
 #### Jenkins
+
 
 - Jenkins is an open-source continuous integration server written in Java.
 - It helps developers in building and testing software continuously. It increases the scale of automation and is quickly gaining popularity in DevOps circles
