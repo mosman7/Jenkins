@@ -5,8 +5,8 @@
 - A CI/CD pipeline is all about automation: Intialising the code builds, automated testing, and automated deployment to staging or production enviroments. This saves the teams a lot of time as they don't have to create the tests and this process is incredibly fast.
 
 #### Continuous Integration
-- Developers merge/commit code to the main branch multiple times a day, full automated build and test processes which gives them feedback within a few minutes, by doing this, you are effectively avoiding the integration mayhem that happens when developers wait for the release day to merge all their changes into the release branch.
 - Is the practice of automating the integration of code changes from multiple contributors into a single software project. It's a primary DevOps best practice, allowing developers to frequently merge code changes into a central repository where the builds and tests are then run.
+- Developers merge/commit code to the main branch multiple times a day, full automated build and test processes which gives them feedback within a few minutes, by doing this, you are effectively avoiding the integration mayhem that happens when developers wait for the release day to merge all their changes into the release branch.
 
 #### Continuous Delivery
 - It's an extension of continuous integration to make sure that you can release new changes to your customers quicker in a much more sustainable method. So on top of your continuous integration, you also automated your release process and can deploy you application at any point of time by clicking a button. Deployment will have to be done manually but that can also be done automatically
@@ -23,7 +23,7 @@ create/add a diagram for ci/cd
 
 ![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.synopsys.com%2Fglossary%2Fwhat-is-cicd.html&psig=AOvVaw1B0lUUhLFomBd-xg9_Ubt2&ust=1667988201302000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCLjwsparnvsCFQAAAAAdAAAAABAD)
 
-Jenkins stages
+#### Jenkins
 
 - Jenkins is an open-source continuous integration server written in Java.
 - It helps developers in building and testing software continuously. It increases the scale of automation and is quickly gaining popularity in DevOps circles
@@ -31,7 +31,7 @@ Jenkins stages
 
 how does it work
 
-benefits of using Jenkins
+#### Benefits of using Jenkins
 - Issues are detected and resolved almost right away which keeps the software in a state where it can be released at any time safely.
 - Most of the integration work is automated. Hence fewer integration issues. This saves both time and money over the lifespan of a project.
 - 
