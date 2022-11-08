@@ -53,3 +53,4 @@ copy .pub file into github
 3. copy file.pub to github repo
 4. copy private key in jenkins
 5. create new job to test CI
+fwefwef
