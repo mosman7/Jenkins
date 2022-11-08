@@ -24,7 +24,6 @@
 - It is a way for an application to provide other applications with real-time information. It provides data as it is happening. This essentially means that you get the data immediately rather having to set up frequent pulls to get it in real time..
 #### Jenkins
 
-
 - Jenkins is an open-source continuous integration server written in Java.
 - It helps developers in building and testing software continuously. It increases the scale of automation and is quickly gaining popularity in DevOps circles
 
@@ -44,14 +43,64 @@
 
 what other tools are available as automation servedr
 
-##### Steps:
-create a new ssh key pair eng130_jenkins_osman - copy - eng130_jenkins_osman.pub
-copy .pub file into github
+##### Steps for setting up Jenkins:
 
 1. create new CI/CD - app folder
 2. generate new ssh-keypair - do tthis in ssh folder on localhost
 3. copy file.pub to github repo
 4. copy private key in jenkins
 5. create new job to test CI
-fwefwef
-riueruiognrion
+
+### Merging Github with automation
+##### Main branch:
+- First we generate a new key `$ ssh-keygen -t ed25519 -C "mohamedosman998@hotmail.com"` - email must be github email
+- Name the key `eng130-jenkins-osman`
+- Leave password blank 
+- Public key will be saved in `eng130-jenkins-osman.pub` in .ssh folder
+- `ls` in .ssh and both public and private key should be there
+- `cat eng130-jenkins-osman.pub` and copy all contents
+- Create a new repo
+- Connect to VSCode
+- In repo settings, go to deploy keys and create new key
+- Add the public key and name it
+
+- Copy app and environment folder into new repo folder on localhost
+- push these changes to github
+
+- Log into Jenkins
+- Create new job
+- Name the job `osman-CI`, select `freestyle project` and create
+- Give a brief description
+- Select `Discard old builds` and set max to 3
+- Select `GitHub project` and then copy the HTTPS link of repo (clock on code)
+- In Office 365 Connector tick `Restrict where this project can be run` and input `sparta-ubuntu-node` might need to backspace and click again to get it to work
+- In `Source Code Management` select `Git` and copy the ssh link from the same place you got the HTTPS link and paste it in.
+- This will display an error as there is no private key
+
+- Now we need to link the private key to allow access to github:
+    - Click `add` and select `jenkins`
+    - for `Kind`, select `SSH username with private key`
+    - Enter a username 
+    - Select `enter directly` on private key
+    - Copy private key from .ssh folder in `eng130-jenkins-osman` - copy exactly everything
+    - Leave passphrase blank and Add
+- Find the private key in credentials and this error should now go
+- In branches to build input the branch you are using either main or dev
+- To set up webhook:
+    - In `Build Triggers` select `github hook trigger` - after setting up webhook in github
+- In `Build environment` select `Provide Node & npm bin`
+- In `Build` select `Execute shell`
+- Input commands to run app
+```
+cd app - Navigate to app folder
+npm install
+npm test
+```
+- Save
+- You have now set up a jenkins job
+
+## Job 2
+
+
+
+Set up webhook 
