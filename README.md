@@ -14,10 +14,10 @@
 #### Continuous Deployment - CDE
 - This goes futher than Continuous Delivery by deploying the actually application online automatically, so each change that passes all the stages of your production pipeline is released to your customers, there is no human interaction so this lowers the chance for human error, and even one failed test will prevent the new change being deployed to production.
 
-### What is the diff between Continuous deliver - deployment
+#### What is the difference between Continuous deliver - deployment
 - The main difference is that on continuous delivery, you would have to deploy the application manually whereas continuous deployment is an extension of continuous delivery and deploys the application automatically as well as testing the application too.
 
-What is a webhook
+#### What is a webhook
 
 ![](https://miro.medium.com/max/612/0*DVSYJfjOJrCTzqUB.png)
 
@@ -28,7 +28,7 @@ What is a webhook
 
 #### Stages
 ![](https://cloudaffaire.com/wp-content/uploads/2022/01/word-image-45.png)
-A piece of code that is ready to be deployed needs to go through each of these stages before it is released to a live production. It is a thorough check at each stage and must pass.
+- A piece of code that is ready to be deployed needs to go through each of these stages before it is released to a live production. It is a thorough check at each stage and must pass.
 
 #### How does it work
 
