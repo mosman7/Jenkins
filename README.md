@@ -21,7 +21,7 @@
 ![](https://miro.medium.com/max/612/0*DVSYJfjOJrCTzqUB.png)
 
 #### What is a webhook
-- It is a way for an application to provide other applications with real-time information. It provides data as it is happening. This essentially means that you get the data immediately rather having to set up frequent pulls to get it in real time.
+- It is a way for an application to provide other applications with real-time information. It provides data as it is happening. This essentially means that you get the data immediately rather having to set up frequent pulls to get it in real time..
 #### Jenkins
 
 
