@@ -28,8 +28,11 @@ create/add a diagram for ci/cd
 - Jenkins is an open-source continuous integration server written in Java.
 - It helps developers in building and testing software continuously. It increases the scale of automation and is quickly gaining popularity in DevOps circles
 
+#### Stages
 
-how does it work
+A piece of code that is ready to be deployed needs to go through each of these stages before it is released to a live production. It is a thorough check at each stage and must pass.
+
+#### How does it work
 
 #### Benefits of using Jenkins
 - Issues are detected and resolved almost right away which keeps the software in a state where it can be released at any time safely.
