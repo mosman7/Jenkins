@@ -19,9 +19,7 @@
 
 What is a webhook
 
-create/add a diagram for ci/cd
-
-![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.synopsys.com%2Fglossary%2Fwhat-is-cicd.html&psig=AOvVaw1B0lUUhLFomBd-xg9_Ubt2&ust=1667988201302000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCLjwsparnvsCFQAAAAAdAAAAABAD)
+![](https://miro.medium.com/max/612/0*DVSYJfjOJrCTzqUB.png)
 
 #### Jenkins
 
@@ -29,7 +27,7 @@ create/add a diagram for ci/cd
 - It helps developers in building and testing software continuously. It increases the scale of automation and is quickly gaining popularity in DevOps circles
 
 #### Stages
-
+![](https://cloudaffaire.com/wp-content/uploads/2022/01/word-image-45.png)
 A piece of code that is ready to be deployed needs to go through each of these stages before it is released to a live production. It is a thorough check at each stage and must pass.
 
 #### How does it work
